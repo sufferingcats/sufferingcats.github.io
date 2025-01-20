@@ -1,0 +1,97 @@
+.main-wrapper {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+header {
+    background: #ffffff;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+.nav-container {
+    width: 60%;
+    border-bottom: 2px solid #000;
+    margin: 0 auto;
+}
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 100px 0;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav a,
+.nav a:hover,
+.nav a:visited {
+    text-decoration: underline;
+    text-decoration-color: #e1b700;
+    text-decoration-thickness: 5px;
+    color:#000000;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+footer {
+    background: #e1b700;
+    color: #000;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.main-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 150px 0 0 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
+.intro {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-right: 100px;
+    width: 50%;
+    float: right;
+}
+
+.intro a,
+.intro a:hover, 
+.intro a:visited {
+    text-decoration: underline;
+    text-decoration-color: #e1b700;
+    text-decoration-thickness: 5px;
+    color:#000000;
+}
+
+.image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 20px 20px 20px 150px;
+    float: left;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}

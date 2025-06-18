@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Lexend:wght@100..900&family=Sono:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body class="sono-font">
     <div class="main-wrapper">
@@ -17,19 +18,30 @@
             <div class="nav-container">
                 <div class="hamburger">&#9776;</div> <!-- Hamburger Icon -->
                 <ul class="nav">
-                    <li><a href="/index.html">home</a></li>
-                    <li><a href="/blog">blog</a></li>
-                    <li><a href="/projects">projects</a></li>
-                    <li><a href="/contact">contact</a></li>
+                    <li><a href="index.html">home</a></li>
+                    <!-- <li><a href="blog">blog</a></li>
+                    <li><a href="projects">projects</a></li>
+                    <li><a href="contact.html">contact</a></li> -->
+                    <!-- Dark Mode Toggle --> 
+                    <li id="theme">
+                        <button @click="toggleDarkMode"> 
+                            {{ isDark ? '💡' : '🌑' }}
+                        </button>
+                    </li>
                 </ul>
             </div>
 
             <!-- Mobile Nav -->
             <ul class="mobile-nav">
-                <li><a href="/index.html">home</a></li>
-                <li><a href="/blog">blog</a></li>
-                <li><a href="/projects">projects</a></li>
-                <li><a href="/contact">contact</a></li>
+                <li><a href="index.html">home</a></li>
+                <!-- <li><a href="/blog">blog</a></li>
+                <li><a href="/projects">projects</a></li> 
+                <li><a href="contact.html">contact</a></li> -->
+                <li id="mobile-theme">
+                    <button @click="toggleDarkMode"> 
+                        {{ isDark ? '💡' : '🌑' }}
+                    </button>
+                </li>
             </ul>
         </header>
 
@@ -45,6 +57,8 @@
                         <p>I'm a software test engineer at the <a href="https://www.stsci.edu/home">Space Telescope Science Institute</a>, where I contribute to maintaining both automated and manual tests for applications that host telescope data. I work with tools and technologies such as Robot Framework, FastAPI, Python, GitLab CI/CD pipelines, Selenium, and PostgreSQL.</p>
                         <br>
                         <p>Outside of work, I'm passionate about learning, coffee, progressive metal, getting lost in a good book, and working torwards my next big running goal.</p>
+                        <br>
+                        <p>Currently, the best way to contact me is via email <a href="mailto:bello.kathrynj@gmail.com">(bello.kathrynj@gmail.com)</a> or <a href="https://www.linkedin.com/in/kathrynbello/" target="_blank">LinkedIn</a>.</p>
                     </div>
                 </div>
             </section>
@@ -55,7 +69,7 @@
             <p>Copyright &copy; 2025 Kathryn Bello</p>
         </footer>
     </div>
-
+    
     <script src="scripts/main.js"></script>
 </body>
 </html>

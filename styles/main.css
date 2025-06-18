@@ -145,9 +145,68 @@ footer {
     font-style: normal;
     font-variation-settings:
       "MONO" 1;
-} 
-  
+}
 
+/* DARK MODE */
+body.dark {
+    background-color: #121212;
+    color: #eee;
+}
+
+body.dark header {
+    background: #1e1e1e;
+    color: #eee;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05);
+}
+
+body.dark .nav a,
+body.dark a,
+body.dark .mobile-nav a {
+    color: #eee;
+    text-decoration-color: #facc15;
+}
+
+body.dark .mobile-nav {
+    background: #1e1e1e;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05);
+}
+
+body.dark footer {
+    background: #333;
+    color: #fefefe;
+}
+
+#theme {
+    display: flex;
+    align-items: center;
+}
+
+#mobile-theme {
+    text-align: center;
+    padding: 15px;
+}
+
+#theme button, #mobile-theme button {
+    padding: 0.3em 0.75em;
+    margin: 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 15px;
+    background-color: #ddd;
+    color: #111;
+    transition: background-color 0.3s, color 0.3s;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+body.dark #theme button, body.dark #mobile-theme button {
+    background-color: #444;
+    color: #fff;
+}
+  
+/* Responsive Styles */
 @media (max-width: 768px) {
     .nav {
         display: none;
